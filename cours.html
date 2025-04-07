@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Les Cours</title>
+  <link rel="stylesheet" href="cours.css">
+</head>
+<body>
+  <h1>Les Cours</h1>
+  <div class="courses-container">
+    <div class="course-card" onclick="showDetails('cours1')">
+      <h2><a href="#" target="_blank"> 💻 Programmation Web Dynamique</a></h2>
+      <p>Création de sites web interactifs avec des langages côté client et serveur.</p>
+      <button>Voir plus</button>
+      <div class="details" id="cours1">  Ce module enseigne comment développer des applications web dynamiques à l’aide de langages comme PHP, JavaScript, HTML, CSS et des bases de données comme MySQL. L’objectif est de permettre aux étudiants de construire des sites web qui interagissent avec les utilisateurs et affichent des données dynamiques.</div>
+    </div>
+    <div class="course-card" onclick="showDetails('cours2')">
+      <h2> <a href="#" target="_blank">🛠️ Génie Logiciel</a></h2>
+      <p>Méthodes de conception et de gestion de projets logiciels.</p>
+      <button>Voir plus</button>
+      <div class="details" id="cours2">  Le module de Génie Logiciel aborde les différentes étapes de création d’un logiciel : analyse des besoins, conception, développement, tests et maintenance. Il introduit aussi les modèles de développement (comme le cycle en V ou Agile) et les outils de gestion de version (ex: Git).</div>
+    </div>
+    <div class="course-card" onclick="showDetails('cours3')">
+      <h2> <a href="#" target="_blank">🖱️IHM(Interfaces Homme-Machine)</a></h2>
+      <p>Conception d'interfaces utilisateur efficaces et ergonomiques.</p>
+      <button>Voir plus</button>
+      <div class="details" id="cours3"> Ce module traite de la création d’interfaces conviviales en tenant compte de l’ergonomie, de l’accessibilité et de l’expérience utilisateur. Il permet d’apprendre à concevoir et tester des interfaces modernes (ex: avec JavaFX, Qt, ou HTML/CSS/JS).</div>
+    </div>
+    <div class="course-card" onclick="showDetails('cours4')">
+      <h2><a href="#">🧩 Modélisation</a></h2>
+      <p>Représentation formelle des systèmes et des structures de données.</p>
+      <button>Voir plus</button>
+      <div class="details" id="cours4">  La modélisation permet de représenter les systèmes informatiques de manière abstraite. Le module couvre des outils comme les diagrammes UML (cas d’utilisation, classes, séquences), la modélisation de bases de données relationnelles ou les modèles mathématiques.</div>
+    </div>
+  </div>
+
+  <script >
+    function showDetails(id) {
+        const detail = document.getElementById(id);
+        const isVisible = detail.style.display === "block";
+      
+        // Hide all details first
+        document.querySelectorAll(".details").forEach(div => div.style.display = "none");
+      
+        // Toggle visibility
+        detail.style.display = isVisible ? "none" : "block";
+      }
+      
+  </script>
+</body>
+</html>

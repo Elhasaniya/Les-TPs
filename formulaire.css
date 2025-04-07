@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+  }
+  
+  .form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input:focus, form select:focus, form textarea:focus {
+    border-color: #0b5586;
+    outline: none;
+  }
+  
+  form textarea {
+    resize: vertical;
+    height: 100px;
+  } 
+  #feedback {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .form-buttons button {
+    flex: 1;
+  }
+  
+  .cancel {
+    background-color: #e74c3c;
+  }
+  
+  .cancel:hover {
+    background-color: #c0392b;
+  }
+    

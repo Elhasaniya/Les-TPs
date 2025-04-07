@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulaire De Contact</title>
+  <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Formulaire De Contact</h2>
+    <form id="contactForm">
+      <label for="name">Nom complet</label>
+      <input type="text" id="name" placeholder="Votre nom" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="votre@email.com" required>
+
+      <label for="subject">Filière</label>
+      <select id="subject" required>
+        <option value="">-- Choisir un filière --</option>
+        <option value="SMI">SMI</option>
+        <option value="IGE">IGE</option>
+        <option value="SMP">SMP</option>
+        <option value="autre">Autre</option>
+      </select>
+
+      <label for="message">Sujet</label>
+      <textarea id="message" placeholder="Votre description ici..." required></textarea>
+      <div class="form-buttons">
+        <button type="submit">Envoyer</button>
+        <button type="reset" class="cancel">Annuler</button>
+      </div>      
+    </form>
+    <p id="feedback" class="hidden"></p>
+  </div>
+
+  <script >
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+      
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value.trim();
+        const feedback = document.getElementById("feedback");
+      
+        if (!name || !email || !subject || !message) {
+          feedback.textContent = "Veuillez remplir tous les champs.";
+          feedback.style.color = "red";
+          feedback.classList.remove("hidden");
+          return;
+        }
+      
+        // Simulation d'envoi réussi
+        feedback.textContent = `Merci ${name}, votre message a été envoyé !`;
+        feedback.style.color = "green";
+        feedback.classList.remove("hidden");
+      
+        // Réinitialiser le formulaire
+        document.getElementById("contactForm").reset();
+      });
+      
+  </script>
+</body>
+</html>

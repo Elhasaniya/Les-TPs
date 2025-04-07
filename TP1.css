@@ -1,0 +1,56 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+th {
+    background-color: #e9c46a;
+    color: white;
+}
+.level{
+    background-color: #f8f9fa;
+}
+.section  {
+    background-color: #e9c46a;
+    font-weight: bold;
+   
+} 
+.section a{
+    text-decoration: none;
+    color: #000;
+}
+.section :hover{
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+}
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+#Amphi{
+    background-color: white;
+}
+tr .content{
+    background-color: rgb(46, 31, 129);
+}
+.id{
+    background-color: rgb(184, 224, 224);
+    color: black;
+    writing-mode: vertical-rl;
+}
+h2{
+    font-family:'Amiri' ;
+    font-size: 20px;
+    color: black;
+}
+
+
+
+
