@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Interactif Amélioré</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+            background-color: #f0f8ff;
+        }
+
+        #quiz-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .option {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #e7f3ff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: #cde7ff;
+        }
+
+        #score {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        #timer {
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Quiz Interactif</h1>
+        <div id="question-box"></div>
+        <div id="options-box"></div>
+        <p id="timer">Temps restant : <span id="time">10</span>s</p>
+        <p id="score"></p>
+        <button onclick="lancerQuiz()">Demarrer le Quiz</button>
+    </div>
+
+    <script src="TP5_Ex3.js"></script>
+</body>
+</html>
