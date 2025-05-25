@@ -1,0 +1,55 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice en PHP</title>
+    <style>
+         body {
+            font-family: Arial;
+            background: #e1dddd;
+            padding: 30px;
+        }
+        form {
+            margin: auto;
+            background: white;
+            padding: 20px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #150b0b;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e2ffe2;
+            border: 1px solid #9fe99f;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Calculatrice En PHP:</h2>
+    <form action="TP8_Ex1.php" method="post">
+        <label for="num1">Nombre 1 :</label>
+    <input type="number" step="any" name="num1" required>
+
+    <label for="num2">Nombre 2 :</label>
+    <input type="number" step="any" name="num2" required>
+      <label for="operation">Opération :</label>
+    <select name="operation" required>
+        <option value="add">Addition (+)</option>
+        <option value="sub">Soustraction (-)</option>
+        <option value="mul">Multiplication (×)</option>
+        <option value="div">Division (/)</option>
+    </select>
+
+    <input type="submit" value="Calculer">
+
+    </form>
+    
+</body>
+</html>

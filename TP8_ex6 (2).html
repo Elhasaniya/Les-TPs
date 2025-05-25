@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Quiz - HTML</title>
+  <style>
+    body{
+        background: rgb(230, 202, 150);
+    }
+    form{
+        margin: auto;
+        width: 500px;
+        padding: 10px;
+        background-color: aliceblue;
+        border-radius: 20px;
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+    }
+   p{
+    font-size: 20px;
+   }
+   button{
+    border: 1px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 5px;
+    color:black;
+    background-color: red;
+    
+   }
+  </style>
+</head>
+<body>
+  <h2>Mini Quiz HTML/CSS/JS</h2>
+  <form action="TP8_Ex6.php" method="POST">
+    <p>1. Que signifie HTML ?</p>
+    <label><input type="radio" name="q1" value="a"> HyperText Markup Language</label><br>
+    <label><input type="radio" name="q1" value="b"> HighText Machine Language</label><br>
+    <label><input type="radio" name="q1" value="c"> Hyperloop Machine Link</label>
+
+    <p>2. Quel est le bon sélecteur CSS pour cibler une classe nommée "menu" ?</p>
+    <label><input type="radio" name="q2" value="a"> #menu</label><br>
+    <label><input type="radio" name="q2" value="b"> .menu</label><br>
+    <label><input type="radio" name="q2" value="c"> menu</label>
+
+    <p>3. En JavaScript, comment déclare-t-on une variable ?</p>
+    <label><input type="radio" name="q3" value="a"> v nom = valeur;</label><br>
+    <label><input type="radio" name="q3" value="b"> var nom = valeur;</label><br>
+    <label><input type="radio" name="q3" value="c"> variable nom = valeur;</label>
+
+    <br><br>
+    <button type="submit">Corriger</button>
+  </form>
+</body>
+</html>

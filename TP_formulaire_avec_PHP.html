@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Formulaire PHP</title>
+    <style>
+        body{
+            background: beige;
+        }
+        h1{
+        
+        }
+        form{
+            background: white;
+            padding: 30px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(0, 0,0);
+            max-width: 500px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Formulaire en PHP</h1>
+    <form action="reponse.php" method="post">
+      <select name="titre" id="titre">
+        <option>Mme</option>
+        <option>Mlle</option>
+        <option>Mon</option>
+      </select>
+      <label for="non">Nom:</label>
+      <input type="text" name="nom" id="nom" placeholder="entrer votre nom..."> <br><br>
+      <label for="prenom">Prenom:</label>
+      <input type="text" name="prenom" id="prenom" placeholder="entrer votre prenom..." ><br><br>
+      <label for="annee">Votre annee de naissance:</label>
+      <input type="text" name="annee" id="annee" placeholder="votre annee de naissance..."><br><br>
+      <label for="ide">Donnez un identifiant:</label>
+      <input type="text" name="ide" id="ide" placeholder="votre id...."><br><br>
+      <label for="pass">Donnez un mot de passe:</label>
+      <input type="password" name="pass" id="pass" placeholder="votre password..."><br><br>
+      <label for="sexe">Sexe:</label>
+      <input type="radio" name="sexe" id="sexe" value="F" checked> Feminin
+      <input type="radio" name="sexe" id="sexe" value="H" checked> Masculin <br><br>
+      <input type="checkbox" name="debut" checked />Je debute en PHP <br><br>
+      <input type="submit" name="ok" value="Envoyer">
+    </form>
+</body>
+</html>

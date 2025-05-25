@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP6_Ex1</title>
+    <style>
+        #maDiv {
+            border: 2px solid black;
+            padding: 20px;
+            width: 300px;
+            margin: 50px auto;
+            cursor: pointer;
+          }
+    </style>
+</head>
+<body>
+   
+    <script>
+
+const maDiv = document.createElement("div");
+maDiv.id = "maDiv"; 
+
+const monParagraphe = document.createElement("p");
+monParagraphe.textContent = "Ceci est un paragraphe";
+
+maDiv.appendChild(monParagraphe);
+
+document.body.appendChild(maDiv);
+
+monParagraphe.textContent = "Le texte a été modifié";
+
+monParagraphe.style.backgroundColor = "lightblue";
+monParagraphe.style.textAlign = "center";
+
+maDiv.addEventListener("click", () => {
+  monParagraphe.textContent = "Un clic a été détecté";
+});
+
+    </script>
+</body>
+</html>
