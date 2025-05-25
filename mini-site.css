@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefefe;
+  color: #222;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #e74c3c;
+  font-family: 'Courier New', Courier, monospace ;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x400?text=Bienvenue+chez+Delicio') center/cover;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.menu {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #e67e22;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: scale(1.03);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.item h3 {
+  margin: 1rem 0 0.5rem;
+  color: #e74c3c;
+}
+
+.contact {
+  padding: 2rem;
+  background-color: #eee;
+  text-align: center;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+#themeToggle {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* === DARK MODE === */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode .container,
+body.dark-mode .item {
+  background-color: #2c2c2c;
+}
+
+body.dark-mode nav a {
+  color: #f0f0f0;
+}
+
+body.dark-mode .menu,
+body.dark-mode .contact {
+  background-color: #1b1b1b;
+}
+
+body.dark-mode footer {
+  background-color: #111;
+}
+
+body.dark-mode #themeToggle {
+  background-color: #f0f0f0;
+  color: #222;
+}
